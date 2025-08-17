@@ -8,7 +8,7 @@ class SpringDatabaseJpaApplicationTests {
 
 	@Test
 	void contextLoads() {
-
+2
 	}
 
 }
