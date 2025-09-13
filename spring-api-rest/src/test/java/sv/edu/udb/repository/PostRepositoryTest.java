@@ -18,7 +18,7 @@ import static org.junit.jupiter.api.Assertions.assertNull;
     private PostRepository postRepository;
     @BeforeEach
     void init() {
-        final String expectedTitle = "wa";
+        final String expectedTitle = "Anything you want to write";
         final LocalDate expectedDate = LocalDate.of(2025, 9, 5);
         final Post newPost = Post
                 .builder()
