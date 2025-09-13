@@ -5,8 +5,8 @@ import jakarta.validation.ConstraintValidatorContext;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
-public class PhoneNumberValidation {
-    public class PhoneNumberValidator implements ConstraintValidator<PhoneNumber, String> {
+public class PhoneNumberValidator implements ConstraintValidator<PhoneNumber, String> {
+
         private String regexPattern;
         private Pattern pattern;
         private Matcher matcher;
@@ -14,7 +14,6 @@ public class PhoneNumberValidation {
         @Override
         public void initialize(final PhoneNumber constraintAnnotation) {
             regexPattern = constraintAnnotation.pattern();
-
 
         }
 
@@ -29,4 +28,4 @@ public class PhoneNumberValidation {
             return matcher.matches();
         }
     }
-}
+

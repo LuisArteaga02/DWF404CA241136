@@ -17,7 +17,7 @@ import static java.lang.annotation.RetentionPolicy.RUNTIME;
      */
     @Target({TYPE, FIELD, ANNOTATION_TYPE})
     @Retention(RUNTIME)
-    @Constraint(validatedBy = PhoneNumberValidation.PhoneNumberValidator.class)
+    @Constraint(validatedBy = PhoneNumberValidator.class)
     @Documented
     public @interface PhoneNumber {
         /*** Error message.
